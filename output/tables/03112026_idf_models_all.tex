@@ -1,0 +1,48 @@
+\begin{tabular}{@{\extracolsep{5pt}}lccccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{9}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-10} 
+\\[-1.8ex] & paste("Local wetland change (ha) \textasciitilde ind\_Harvey +", base\_controls) & paste("Local wetland change (ha) \textasciitilde height\_above\_gnd\_max +", base\_controls) & paste("Local wetland change (ha) \textasciitilde harvey\_hwm\_count +", base\_controls) & paste("Local wetland change (ha) \textasciitilde ind\_Harvey +", base\_controls) & paste("Local wetland change (ha) \textasciitilde height\_above\_gnd\_max +", base\_controls) & paste("Local wetland change (ha) \textasciitilde harvey\_hwm\_count +", base\_controls) & paste("Local wetland change (ha) \textasciitilde ind\_Harvey +", base\_controls) & paste("Local wetland change (ha) \textasciitilde height\_above\_gnd\_max +", base\_controls) & paste("Local wetland change (ha) \textasciitilde harvey\_hwm\_count +", base\_controls) \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9)\\ 
+\hline \\[-1.8ex] 
+ ind\_Harvey & $-$18.819 &  &  & $-$20.441 &  &  &  &  &  \\ 
+  & (7.680) &  &  & (7.830) &  &  &  &  &  \\ 
+  & & & & & & & & & \\ 
+ height\_above\_gnd\_max &  & $-$4.474 &  &  & $-$4.744 &  &  & $-$3.097 &  \\ 
+  &  & (1.541) &  &  & (1.539) &  &  & (1.465) &  \\ 
+  & & & & & & & & & \\ 
+ harvey\_hwm\_count &  &  & $-$1.534 &  &  & $-$1.593 &  &  & $-$0.601 \\ 
+  &  &  & (0.758) &  &  & (0.769) &  &  & (0.447) \\ 
+  & & & & & & & & & \\ 
+ \emph{Controls} \\ Developed area (ha) & $-$0.083 & $-$0.082 & $-$0.083 & $-$0.071 & $-$0.070 & $-$0.071 & $-$0.158 & $-$0.155 & $-$0.157 \\ 
+  & (0.016) & (0.016) & (0.016) & (0.017) & (0.016) & (0.017) & (0.049) & (0.048) & (0.048) \\ 
+  & & & & & & & & & \\ 
+ Median income (US\$) & $-$0.00004 & $-$0.00004 & $-$0.00004 & 0.0001 & 0.0001 & 0.0001 & $-$0.0001 & $-$0.00004 & $-$0.0001 \\ 
+  & (0.0001) & (0.0001) & (0.0001) & (0.0004) & (0.0004) & (0.0004) & (0.0004) & (0.0004) & (0.0004) \\ 
+  & & & & & & & & & \\ 
+ Population & 0.002 & 0.002 & 0.002 & 0.004 & 0.004 & 0.004 & $-$0.001 & $-$0.001 & $-$0.001 \\ 
+  & (0.001) & (0.001) & (0.001) & (0.003) & (0.003) & (0.003) & (0.004) & (0.004) & (0.004) \\ 
+  & & & & & & & & & \\ 
+ Number of housing units & $-$0.004 & $-$0.004 & $-$0.004 & $-$0.008 & $-$0.008 & $-$0.008 & 0.011 & 0.010 & 0.011 \\ 
+  & (0.001) & (0.001) & (0.001) & (0.009) & (0.009) & (0.009) & (0.011) & (0.010) & (0.011) \\ 
+  & & & & & & & & & \\ 
+ Median home value (US\$) & $-$0.00002 & $-$0.00002 & $-$0.00002 & 0.0001 & 0.0001 & 0.0001 & 0.00000 & $-$0.00002 & $-$0.00000 \\ 
+  & (0.00001) & (0.00001) & (0.00001) & (0.0001) & (0.0001) & (0.0001) & (0.0001) & (0.0001) & (0.0001) \\ 
+  & & & & & & & & & \\ 
+ CRS discount (percent) & $-$0.412 & $-$0.453 & $-$0.499 & $-$1.030 & $-$1.251 & $-$1.514 & 0.932 & 0.743 & 0.671 \\ 
+  & (0.536) & (0.531) & (0.525) & (1.577) & (1.517) & (1.433) & (0.590) & (0.510) & (0.471) \\ 
+  & & & & & & & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & State & State & State & State & State &  &  &  &  \\ 
+Original data & \checkmark &  &  &  &  &  &  &  &  \\ 
+Truncate at 0.5pct &  & \checkmark &  &  &  &  &  &  &  \\ 
+Truncate at 1pct &  &  & \checkmark &  &  &  &  &  &  \\ 
+Drop 2017 &  &  &  & \checkmark &  &  &  &  &  \\ 
+Drop TX, LA &  &  &  &  & \checkmark &  &  &  &  \\ 
+Observations & 25,734 & 25,734 & 25,734 & 1,982 & 1,982 & 1,982 & 242 & 242 & 242 \\ 
+R$^{2}$ & 0.057 & 0.058 & 0.057 & 0.022 & 0.022 & 0.022 & 0.388 & 0.396 & 0.391 \\ 
+Adjusted R$^{2}$ & 0.055 & 0.056 & 0.055 & 0.018 & 0.018 & 0.018 & 0.370 & 0.376 & 0.370 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 

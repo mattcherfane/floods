@@ -1,0 +1,14 @@
+Copyright (c) 2026 Matthew Cherfane and Will Rafey. All rights reserved.
+
+This repository is made publicly available solely so that readers can view,
+verify, and reproduce the results reported in the accompanying paper. No
+permission is granted to copy, modify, redistribute, or reuse any part of
+this repository (including code, data, text, tables, and figures) without
+the prior written consent of the authors.
+
+No part of this repository may be used to train, fine-tune, or evaluate
+machine learning or artificial intelligence models.
+
+Data obtained from third parties (including Taylor & Druckenmiller's
+replication package, FEMA, USGS, and the U.S. Census Bureau) remain subject
+to their original terms.

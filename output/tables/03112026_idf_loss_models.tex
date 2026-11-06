@@ -1,0 +1,36 @@
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{5}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-6} 
+\\[-1.8ex] & paste("Local wetland loss (ha) \textasciitilde ind\_Harvey +", base\_controls) & paste("Local wetland loss (ha) \textasciitilde height\_above\_gnd\_max +", base\_controls) & paste("Local wetland loss (ha) \textasciitilde harvey\_hwm\_count +", base\_controls) & paste("Local wetland loss (ha) \textasciitilde share\_nfhl +", base\_controls) & paste("Local wetland loss (ha) \textasciitilde elevation\_m +", base\_controls) \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5)\\ 
+\hline \\[-1.8ex] 
+ ind\_Harvey & $-$17.559 &  &  &  &  \\ 
+  & (7.191) &  &  &  &  \\ 
+  & & & & & \\ 
+ height\_above\_gnd\_max &  & $-$4.446 &  &  &  \\ 
+  &  & (1.468) &  &  &  \\ 
+  & & & & & \\ 
+ harvey\_hwm\_count &  &  & $-$1.565 &  &  \\ 
+  &  &  & (0.728) &  &  \\ 
+  & & & & & \\ 
+ share\_nfhl &  &  &  & $-$0.758 &  \\ 
+  &  &  &  & (0.335) &  \\ 
+  & & & & & \\ 
+ elevation\_m &  &  &  &  & 0.335 \\ 
+  &  &  &  &  & (0.101) \\ 
+  & & & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & State & State & State & State & State \\ 
+Original data & \checkmark &  &  &  &  \\ 
+Truncate at 0.5pct &  & \checkmark &  &  &  \\ 
+Truncate at 1pct &  &  & \checkmark &  &  \\ 
+Drop 2017 &  &  &  & \checkmark &  \\ 
+Drop TX, LA &  &  &  &  & \checkmark \\ 
+Observations & 1,982 & 1,982 & 1,982 & 242 & 242 \\ 
+R$^{2}$ & 0.015 & 0.016 & 0.016 & 0.445 & 0.437 \\ 
+Adjusted R$^{2}$ & 0.011 & 0.012 & 0.012 & 0.426 & 0.417 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 

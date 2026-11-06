@@ -1,0 +1,33 @@
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{5}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-6} 
+\\[-1.8ex] & paste("Local wetland change (ha) \textasciitilde share\_nfhl +", base\_controls) & paste("Local wetland change (ha) \textasciitilde share\_A +", base\_controls) & paste("Local wetland change (ha) \textasciitilde share\_V +", base\_controls) & \multicolumn{2}{c}{paste("Local wetland change (ha) \textasciitilde elevation\_m +", base\_controls)} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5)\\ 
+\hline \\[-1.8ex] 
+ share\_nfhl & $-$0.585 &  &  &  &  \\ 
+  & (0.390) &  &  &  &  \\ 
+  & & & & & \\ 
+ share\_A &  & $-$1.089 &  &  &  \\ 
+  &  & (0.432) &  &  &  \\ 
+  & & & & & \\ 
+ share\_V &  &  & 0.498 &  &  \\ 
+  &  &  & (0.739) &  &  \\ 
+  & & & & & \\ 
+ elevation\_m &  &  &  & $-$0.030 & 0.290 \\ 
+  &  &  &  & (0.028) & (0.109) \\ 
+  & & & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & State & State & State & State & State \\ 
+Original data & \checkmark &  &  &  &  \\ 
+Truncate at 0.5pct &  & \checkmark &  &  &  \\ 
+Truncate at 1pct &  &  & \checkmark &  &  \\ 
+Drop 2017 &  &  &  & \checkmark &  \\ 
+Drop TX, LA &  &  &  &  & \checkmark \\ 
+Observations & 242 & 242 & 242 & 1,982 & 242 \\ 
+R$^{2}$ & 0.401 & 0.418 & 0.391 & 0.022 & 0.398 \\ 
+Adjusted R$^{2}$ & 0.380 & 0.398 & 0.370 & 0.018 & 0.378 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
