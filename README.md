@@ -7,7 +7,7 @@ This repository contains data and code needed to reproduce the results in our pa
 comment on Taylor and Druckenmiller (2022), "Wetlands, Flooding, and the
 Clean Water Act," *American Economic Review* 112(4): 1334–63 (hereafter TD).
 
-Our analysis starts from TD's zip-code-level long-difference dataset and adds three new
+Our analysis starts from TD's zip-code-level long-difference dataset. In some of our results, we also rely on three new
 sources of information on flood exposure and flood risk: (i) USGS observations of
 Hurricane Harvey flooding, (ii) zip-code elevation, and (iii) FEMA flood hazard zones.
 This README explains where we obtain the data (Section 1), what you need to run
