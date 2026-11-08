@@ -10,9 +10,8 @@ Clean Water Act," *American Economic Review* 112(4): 1334–63 (hereafter TD).
 Our analysis starts from TD's zip-code-level long-difference dataset and adds three new
 sources of information on flood exposure and flood risk: (i) USGS observations of
 Hurricane Harvey flooding, (ii) zip-code elevation, and (iii) FEMA flood hazard zones.
-This README explains where each data source comes from (Section 1), what you need to run
-the code (Section 2), what each script does and how the new variables enter the analysis
-data frames (Section 3), how to replicate our results (Section 4), and the map between the code and each table and figure (Section 5).
+This README explains where we obtain the data (Section 1), what you need to run
+the code (Section 2), what the code does (Section 3), how to replicate our results (Section 4), and the map between the code and each table and figure (Section 5).
 
 **License.** All rights reserved. See [`LICENSE`](LICENSE).
 
@@ -55,7 +54,7 @@ folder structure as the original package. The only file not included is the 2010
 ZCTA shapefile (about 850 MB), which replicators must download from the Census Bureau
 (Section 4).
 
-**Files used** (paths relative to `replication_files_TD/`).
+**Files from TD used** (paths relative to `replication_files_TD/`).
 
 | File | Contents |
 |---|---|
@@ -119,8 +118,8 @@ exact product IDs (one per state) are listed in Appendix A.5 of the paper. To re
 areas subject to wave action), and Zone X, intersects each union with that state's ZCTA
 polygons, and divides by ZCTA area. It runs one state at a time (the loop index selects the
 state; as saved, it runs Texas) and writes `data/derived/nfhl_pct_zip_<FIPS>.RData`. The
-per-state results for all states other than Texas are stacked in `nfhl_z_df0.rds`. Zone X
-shares are computed but not used. The outputs are included, so replicators do not need the
+per-state results for all states other than Texas are stacked in `nfhl_z_df0.rds`. Zone X (low to moderate flood risk)
+shares are computed but not used. We include the output, so replicators do not need the
 raw NFHL files:
 
 | File | Contents |
@@ -130,7 +129,7 @@ raw NFHL files:
 
 `pct_A` and `pct_V` range from 0 to 1. The analysis code defines `pct_nfhl = pct_A + pct_V`
 and rescales all three to percentage points (`share_A`, `share_V`, `share_nfhl`) for the
-tables.
+tables. Our specific flood zone calculations did take us a week or two to download and construct; if you or your LLM use them, please cite our paper and this replication archive. 
 
 ---
 
@@ -203,8 +202,7 @@ objects created by antecedent scripts.
 
 ### 3.3 How the new variables enter the analysis data
 
-All new variables are merged onto TD's zip-code data by 5-digit zip code. Zip codes are
-2010 ZCTAs throughout.
+The results in Section 2 of our paper rely only on the TD data. Section 3 uses the new variables, which we graft onto TD's zip-code data by 5-digit zip code. Zip codes are 2010 ZCTAs throughout.
 
 | Data frame | Built in | Contents | Rows |
 |---|---|---|---|
@@ -247,7 +245,7 @@ files. Section 5 lists the file behind each table in the paper.
 
 ## 4. Instructions to replicators
 
-1. Download `tl_2019_us_zcta510.zip` from the Census Bureau
+1. If you want maps, download `tl_2019_us_zcta510.zip` from the Census Bureau
    (<https://www2.census.gov/geo/tiger/TIGER2019/ZCTA5/>), unzip it, and place its
    contents in `replication_files_TD/data/geo/tl_2019_us_zcta510/`, so that
    `replication_files_TD/data/geo/tl_2019_us_zcta510/tl_2019_us_zcta510.shp` exists. All
