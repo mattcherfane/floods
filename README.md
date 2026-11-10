@@ -236,7 +236,7 @@ TX/LA sample drops Texas and Louisiana (23,752 zips).
 ### 3.4 A note on the output files
 
 `output/` contains only the tables and figures that appear in the paper; Section 5 maps
-each one to its file and to the line of code that writes it. Running the code also writes
+each one to the line of code that writes it. Running the code also writes
 the following files, which are not stored in the repository:
 
 - Intermediate versions of each table. Tables are first written by `teX()`, whose
@@ -270,26 +270,26 @@ run it, first download the NFHL state files described in Section 1.6.
 
 Line numbers refer to the location in the script that writes each output file.
 
-| Exhibit | Title | Program | File in `output/` |
-|---|---|---|---|
-| Figure 1 | NFIP Claims Change in Texas and Louisiana | `06_extensions.R`, line 827 | `claims_change_txla_diverging_labeled_v2_screenshot.png` |
-| Table 1 | Reassessing the Effect of Wetlands on Flood Damage | `06_extensions.R`, line 174 | `wr_zip_ld_trimmed_new.tex` |
-| Table 2 | Recalculating Average Wetland Value | `06_extensions.R`, line 264 | `wr_avg_value_new.tex` |
-| Table 3 | Claims, Wetlands, Elevation, and Flood Hazard Summary | `06_extensions.R`, line 724 | `summary_claims_wetlands_elevation_nfhl_consolidated.tex` |
-| Table 4 | Harvey Exposure and Flood-Risk Geography Predict Wetland Change | `06_extensions.R`, line 589 | `05102026_idf_consolidated_all_NEW.tex` |
-| Table A1 | State-by-State Baseline Wetland Coefficients | `06_extensions.R`, line 80 | `state_by_state_baseline_wetland_coefficients_nostars.tex` |
-| Table A2 | Reassessing the Effect of Wetlands on Flood Damage (Winsorized) | `06_extensions.R`, line 373 | `winsorization_robustness_clean.tex` |
-| Table A3 | Long Difference Regressions with Added Controls | `04_tables_format.R`, line 107 | `03112026_ov_models_all_NEW.tex` |
-| Table A4 | Long Difference Regressions with NFHL Layer Controls | `04_tables_format.R`, line 270 | `03112026_harvey_nfhl_new_models_all_NEW.tex` |
-| Table A5 | Harvey Exposure and Wetland Change in Texas and Louisiana | `06_extensions.R`, line 629 | `05102026_idf_7b_all_NEW.tex` |
-| Table A6 | Harvey Exposure and Wetland Loss in Texas and Louisiana | `04_tables_format.R`, line 221 | `03112026_idf_loss_models_all_NEW.tex` |
-| Figure A1 | Net Wetland Change in Texas and Louisiana | `05_figures.R`, line 153 | `wetlands_change_txla_screenshot.png` |
-| Figure A2 | FEMA Flood Hazard (NFHL) Exposure in Texas and Louisiana | `05_figures.R`, line 60 | `nfhl_txla_screenshot.png` |
-| Figure A3 | Elevation in Texas and Louisiana | `05_figures.R`, line 169 | `elevation_txla_screenshot.png` |
-| Figure A4 | FEMA Flood Hazard Zone A Exposure in Texas and Louisiana | `05_figures.R`, line 77 | `zoneA_txla_screenshot.png` |
-| Figure A5 | FEMA Flood Hazard Zone V Exposure in Texas and Louisiana | `05_figures.R`, line 87 | `zoneV_txla_screenshot.png` |
-| Figure A6 | Wetland Area in Texas and Louisiana, 2001 | `05_figures.R`, line 210 | `wetland_ha_2001_txla_screenshot.png` |
-| Figure A7 | Wetland Area in Texas and Louisiana, 2016 | `05_figures.R`, line 221 | `wetland_ha_2016_txla_screenshot.png` |
+| Exhibit | Title | Program |
+|---|---|---|
+| Figure 1 | NFIP Claims Change in Texas and Louisiana | `06_extensions.R`, line 827 |
+| Table 1 | Reassessing the Effect of Wetlands on Flood Damage | `06_extensions.R`, line 174 |
+| Table 2 | Recalculating Average Wetland Value | `06_extensions.R`, line 264 |
+| Table 3 | Claims, Wetlands, Elevation, and Flood Hazard Summary | `06_extensions.R`, line 724 |
+| Table 4 | Harvey Exposure and Flood-Risk Geography Predict Wetland Change | `06_extensions.R`, line 589 |
+| Table A1 | State-by-State Baseline Wetland Coefficients | `06_extensions.R`, line 80 |
+| Table A2 | Reassessing the Effect of Wetlands on Flood Damage (Winsorized) | `06_extensions.R`, line 373 |
+| Table A3 | Long Difference Regressions with Added Controls | `04_tables_format.R`, line 107 |
+| Table A4 | Long Difference Regressions with NFHL Layer Controls | `04_tables_format.R`, line 270 |
+| Table A5 | Harvey Exposure and Wetland Change in Texas and Louisiana | `06_extensions.R`, line 629 |
+| Table A6 | Harvey Exposure and Wetland Loss in Texas and Louisiana | `04_tables_format.R`, line 221 |
+| Figure A1 | Net Wetland Change in Texas and Louisiana | `05_figures.R`, line 153 |
+| Figure A2 | FEMA Flood Hazard (NFHL) Exposure in Texas and Louisiana | `05_figures.R`, line 60 |
+| Figure A3 | Elevation in Texas and Louisiana | `05_figures.R`, line 169 |
+| Figure A4 | FEMA Flood Hazard Zone A Exposure in Texas and Louisiana | `05_figures.R`, line 77 |
+| Figure A5 | FEMA Flood Hazard Zone V Exposure in Texas and Louisiana | `05_figures.R`, line 87 |
+| Figure A6 | Wetland Area in Texas and Louisiana, 2001 | `05_figures.R`, line 210 |
+| Figure A7 | Wetland Area in Texas and Louisiana, 2016 | `05_figures.R`, line 221 |
 
 The paper uses PNG images of the map PDFs (in `output/figures/`); the full-resolution PDFs
 (about 9 MB each) are regenerated by the code but not stored in the repository.
